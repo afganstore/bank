@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AFGAN Bank - Банк будущего</title>
+    <link rel="icon" href="img/logo.jpg" type="image/jpeg">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Навигация -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="/" class="logo">
+                <img src="img/logo.jpg" alt="AFGAN Bank" class="logo-img">
+                <span class="logo-text">AFGAN Bank</span>
+            </a>
+            
+            <div class="nav-menu">
+                <a href="/" class="nav-link active">Главная</a>
+                <a href="#about" class="nav-link">О банке</a>
+                <a href="#services" class="nav-link">Услуги</a>
+                <a href="#converter" class="nav-link">Конвертер</a>
+                <a href="#contacts" class="nav-link">Контакты</a>
+            </div>
+            
+            <button class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Герой секция -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Банк нового поколения</h1>
+                <p class="hero-subtitle">С 2025 года меняем представление о банкинге с AFGAN Coin</p>
+                <div class="hero-buttons">
+                    <a href="#converter" class="btn-large btn-primary">
+                        <i class="fas fa-exchange-alt"></i>
+                        Конвертер AFGAN Coin
+                    </a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-value">1 AC</span>
+                        <span class="stat-label">= 150 RUB</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-value">2025</span>
+                        <span class="stat-label">Год основания</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-value">2026</span>
+                        <span class="stat-label">Текущий год</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- О банке -->
+    <section id="about" class="section about">
+        <div class="container">
+            <h2 class="section-title">О AFGAN Bank</h2>
+            <div class="about-grid">
+                <div class="about-card card">
+                    <div class="card-icon">
+                        <i class="fas fa-calendar-alt"></i>
+                    </div>
+                    <h3>Основан в 2025</h3>
+                    <p>Мы - новый игрок на рынке с современным подходом к банковским услугам и инновационными решениями</p>
+                </div>
+                
+                <div class="about-card card">
+                    <div class="card-icon">
+                        <i class="fas fa-coins"></i>
+                    </div>
+                    <h3>AFGAN Coin</h3>
+                    <p>Наша собственная валюта, стабильно привязанная к курсу 1 AC = 150 RUB</p>
+                </div>
+                
+                <div class="about-card card">
+                    <div class="card-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Безопасность</h3>
+                    <p>Высокий уровень защиты данных и финансовых операций</p>
+                </div>
+                
+                <div class="about-card card">
+                    <div class="card-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3>Инновации</h3>
+                    <p>Material Design 3 Expressive в темной теме - будущее уже здесь</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Конвертер -->
+    <section id="converter" class="section converter">
+        <div class="container">
+            <h2 class="section-title">Конвертер AFGAN Coin</h2>
+            <div class="converter-container card">
+                <div class="converter-header">
+                    <h3><i class="fas fa-exchange-alt"></i> Обмен в реальном времени</h3>
+                    <p class="converter-rate">Курс: 1 AFGAN Coin (AC) = 150 Российских рублей (RUB)</p>
+                </div>
+                
+                <div class="converter-body">
+                    <div class="converter-input-group">
+                        <div class="converter-input">
+                            <label for="ac-amount">AFGAN Coin (AC)</label>
+                            <div class="input-wrapper">
+                                <input type="number" id="ac-amount" value="1" min="0" step="0.01">
+                                <span class="currency">AC</span>
+                            </div>
+                        </div>
+                        
+                        <div class="converter-input">
+                            <label for="rub-amount">Российские рубли (RUB)</label>
+                            <div class="input-wrapper">
+                                <input type="number" id="rub-amount" value="150" min="0" step="0.01">
+                                <span class="currency">RUB</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="converter-info">
+                        <p><i class="fas fa-info-circle"></i> Курс фиксированный и гарантируется AFGAN Bank</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Услуги -->
+    <section id="services" class="section services">
+        <div class="container">
+            <h2 class="section-title">Наши услуги</h2>
+            <div class="services-grid">
+                <div class="service-card card">
+                    <div class="service-icon">
+                        <i class="fas fa-coins"></i>
+                    </div>
+                    <h3>Обмен валют</h3>
+                    <p>Быстрый и удобный обмен AFGAN Coin по фиксированному курсу</p>
+                </div>
+                
+                <div class="service-card card">
+                    <div class="service-icon">
+                        <i class="fas fa-piggy-bank"></i>
+                    </div>
+                    <h3>Сберегательные счета</h3>
+                    <p>Накопительные счета с процентной ставкой в AFGAN Coin</p>
+                </div>
+                
+                <div class="service-card card">
+                    <div class="service-icon">
+                        <i class="fas fa-user-shield"></i>
+                    </div>
+                    <h3>Финансовая защита</h3>
+                    <p>Гарантия безопасности ваших средств и данных</p>
+                </div>
+                
+                <div class="service-card card">
+                    <div class="service-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3>Поддержка 24/7</h3>
+                    <p>Круглосуточная помощь и консультации</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Контакты -->
+    <section id="contacts" class="section contacts">
+        <div class="container">
+            <h2 class="section-title">Контакты</h2>
+            <div class="contacts-container card">
+                <div class="contacts-grid">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fab fa-telegram"></i>
+                        </div>
+                        <h3>Telegram канал</h3>
+                        <p>Будьте в курсе всех новостей и обновлений</p>
+                        <a href="https://t.me/afganbank" target="_blank" class="btn-small btn-telegram">
+                            <i class="fab fa-telegram"></i> @afganbank
+                        </a>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <h3>Электронная почта</h3>
+                        <p>Для деловых предложений и сотрудничества</p>
+                        <a href="mailto:afagpstore@gmail.com" class="btn-small btn-primary">
+                            <i class="fas fa-envelope"></i> afagpstore@gmail.com
+                        </a>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <h3>Режим работы</h3>
+                        <p>Круглосуточная поддержка клиентов</p>
+                        <div class="contact-info">
+                            <p><i class="fas fa-check-circle"></i> Онлайн 24/7</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <h3>Онлайн банк</h3>
+                        <p>Работаем полностью в цифровом формате</p>
+                        <div class="contact-info">
+                            <p><i class="fas fa-laptop"></i> Только онлайн-услуги</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Футер -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="logo">
+                        <img src="img/logo.jpg" alt="AFGAN Bank" class="logo-img">
+                        <span class="logo-text">AFGAN Bank</span>
+                    </div>
+                    <p class="footer-text">Банк нового поколения с 2025 года</p>
+                    <div class="social-links">
+                        <a href="https://t.me/afganbank" target="_blank" class="social-link">
+                            <i class="fab fa-telegram"></i>
+                        </a>
+                        <a href="mailto:afagpstore@gmail.com" class="social-link">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Быстрые ссылки</h4>
+                    <a href="/" class="footer-link">Главная</a>
+                    <a href="#about" class="footer-link">О банке</a>
+                    <a href="#converter" class="footer-link">Конвертер</a>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Услуги</h4>
+                    <a href="#services" class="footer-link">Все услуги</a>
+                    <a href="#converter" class="footer-link">Обмен валют</a>
+                    <a href="#contacts" class="footer-link">Контакты</a>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Контакты</h4>
+                    <p class="footer-text">
+                        <i class="fab fa-telegram"></i> 
+                        <a href="https://t.me/afganbank" target="_blank" class="footer-link">@afganbank</a>
+                    </p>
+                    <p class="footer-text">
+                        <i class="fas fa-envelope"></i> 
+                        <a href="mailto:afagpstore@gmail.com" class="footer-link">afagpstore@gmail.com</a>
+                    </p>
+                    <p class="footer-text">Круглосуточная поддержка</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>© 2025-2026 AFGAN Bank. Все права защищены. AFGAN Coin не является криптовалютой.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
